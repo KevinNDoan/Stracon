@@ -17,7 +17,7 @@ export default function Header(props) {
 
 function Navbar() {
     return(
-        <div className={styles.navbar}>
+        <div className={`${styles.navbar} bg-white`}>
             <section className={styles.logo}></section>
             <section className={styles.menu}>
                 <Link href="/home">Home</Link>
