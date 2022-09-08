@@ -6,6 +6,8 @@ export default function Footer() {
 
     return(
         <footer className={`flex p-16 mt-16 justify-center items-center bg-black text-white`}>
+            <div></div>
+            <hr className='border-white' />
             Copyright © 1986 - {currentYear} Stracon Inc.
         </footer>
     )
