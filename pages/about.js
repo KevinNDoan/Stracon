@@ -9,7 +9,7 @@ export default function About() {
             <main>
                 <div className="flex justify-center mt-10">
                     <div className="w-1/2">
-                        <h1 className="text-3xl">What we do at Stracon</h1>
+                        <h1 className="text-4xl font-semibold">What we do at Stracon</h1>
                         <br />
                         <h1 className="text-2xl">Our dedicated 12,000 sq. ft. facility in Irvine, California houses automated surface mount technology lines and complete product manufacturing.</h1>
                         <br />
