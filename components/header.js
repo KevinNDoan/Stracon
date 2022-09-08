@@ -31,29 +31,29 @@ export default function Header(props) {
 }
 
 class Navbar extends React.Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            hiddenMenu: 'hidden'
+        }
+
+        this.toggleMenu = this.toggleMenu.bind(this)
+    }
+
+    toggleMenu() {
+        if(this.state.hiddenMenu === 'hidden')
+            this.setState({ hiddenMenu: '' })
+        else
+            this.setState({ hiddenMenu: 'hidden' })
+    }
+    
     render() {
-        constructor(props) {
-            super(props)
-
-            this.state = {
-                hiddenMenu: 'hidden'
-            }
-
-            this.toggleMenu = this.toggleMenu.bind(this)
-        }
-
-        toggleMenu() {
-            if(this.state.hiddenMenu === 'hidden')
-                this.setState({ hiddenMenu: '' })
-            else
-                this.setState({ hiddenMenu: 'hidden' })
-        }
-
         return(
             <div className={`flex bg-white`}>
                 <section className={styles.logo}></section>
                 <section className={`${styles.menu}`}>
-                    <Link href="/home">Home</Link>
+                    <Link href="/">Home</Link>
                     <Link href="/about">About</Link>
                     <Link href="/equipment">Equipment</Link>
                     <Link href="/industries">Industries</Link>
