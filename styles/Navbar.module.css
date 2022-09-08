@@ -23,7 +23,7 @@
     }
 
     .menu {
-        display: flex !important;
+        display: hidden !important;
     }
 }
 
