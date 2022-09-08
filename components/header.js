@@ -9,6 +9,7 @@ export default function Header(props) {
             <title>Stracon {props.pageName}</title>
             <meta name="description" content="Full Service Contract Manufacturing" />
             <link rel="icon" href="/favicon.ico" />
+            <script src="https://cdn.tailwindcss.com"></script>
         </Head>
         <Navbar pageName={props.pageName} />
         </>
