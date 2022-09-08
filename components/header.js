@@ -35,17 +35,17 @@ class Navbar extends React.Component {
         super(props)
 
         this.state = {
-            hiddenMenu: 'hidden'
+            hiddenMenu: 'none'
         }
 
         this.toggleMenu = this.toggleMenu.bind(this)
     }
 
     toggleMenu() {
-        if(this.state.hiddenMenu === 'hidden')
+        if(this.state.hiddenMenu === 'none')
             this.setState({ hiddenMenu: '' })
         else
-            this.setState({ hiddenMenu: 'hidden' })
+            this.setState({ hiddenMenu: 'none' })
     }
     
     render() {
