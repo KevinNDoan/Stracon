@@ -59,13 +59,13 @@ class Navbar extends React.Component {
                 <section className={styles.logo}></section>
                 <section>
                     <div className={`${styles.menu} space-x-4`}>
-                        <Link href="/"><h3>Home</h3></Link>
-                        <Link href="/about"><h3>About</h3></Link>
-                        <Link href="/equipment"><h3>Equipment</h3></Link>
-                        <Link href="/industries"><h3>Industries</h3></Link>
-                        <Link href="/technologies"><h3>Technologies</h3></Link>
-                        <Link href="/valueadded"><h3>Value Added</h3></Link>
-                        <Link href="/contact"><h3>Contact Us</h3></Link>
+                        <Link href="/"><h3 className="text-2xl">Home</h3></Link>
+                        <Link href="/about"><h3 className="text-2xl">About</h3></Link>
+                        <Link href="/equipment"><h3 className="text-2xl">Equipment</h3></Link>
+                        <Link href="/industries"><h3 className="text-2xl">Industries</h3></Link>
+                        <Link href="/technologies"><h3 className="text-2xl">Technologies</h3></Link>
+                        <Link href="/valueadded"><h3 className="text-2xl">Value Added</h3></Link>
+                        <Link href="/contact"><h3 className="text-2xl">Contact Us</h3></Link>
                     </div>
                     <div className={`${styles.smallMenu}`}>
                         <div className="clickable" onClick={this.toggleMenu}>
