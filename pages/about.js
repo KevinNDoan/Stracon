@@ -9,10 +9,15 @@ export default function About() {
             <main>
                 <div className="flex justify-center mt-10">
                     <div className="w-1/2">
-                        <h1 className="text-xl">Our dedicated 12,000 sq. ft. facility in Irvine, California houses automated surface mount technology lines and complete product manufacturing.</h1>
+                        <h1 className="text-2xl">Our dedicated 12,000 sq. ft. facility in Irvine, California houses automated surface mount technology lines and complete product manufacturing.</h1>
                         <br />
                         <img src="https://straconinc.com/images/slider/slide1.jpg" />
-                        <h1 className="text-xl w-1/2">Surface mount assembly</h1>
+                        <h1 className="text-2xl font-semibold">Printed Circuit Boards</h1>
+                        <h1 className="text-2xl">Surface mount assembly</h1>
+                        <h1 className="text-2xl">Surface mount assembly</h1>
+                        <h1 className="text-2xl">Surface mount assembly</h1>
+                        <h1 className="text-2xl">Surface mount assembly</h1>
+                        <h1 className="text-2xl">Surface mount assembly</h1>
                     </div>
                 </div>
 
