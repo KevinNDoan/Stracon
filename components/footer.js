@@ -5,7 +5,9 @@ export default function Footer() {
     let currentYear = date.getFullYear()
 
     return(
-        <footer className={styles.footer}>
+        <footer className={`${styles.footer} mt-15`}>
+            <div></div>
+            <hr />
             Copyright © 1986 - {currentYear} Stracon Inc.
         </footer>
     )
