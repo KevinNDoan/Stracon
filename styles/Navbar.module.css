@@ -12,3 +12,18 @@
     display: flex !important;
 
 }
+
+.small-menu {
+    display: hidden;
+}
+
+@media screen and (max-width: 991px) {
+    .small-menu {
+        display: flex !important;
+    }
+
+    .menu {
+        display: flex !important;
+    }
+}
+
