@@ -12,7 +12,9 @@ export default function About() {
                 <div className="flex justify-center mt-10">
                     <div className="w-1/2">
                         <h1 className="text-2xl">Our commitment and goal to quality and excellence is reflected in our products and services to our customers.With STRACON Inc., our customers have a manufacturing partner they can depend on to meet the needs of a challenging market. We are dedicated to meeting all of our commitments to our customers.</h1>
+                        <br />
                         <h1 className="text-2xl">Our dedicated 12,000 sq. ft. facility in Irvine, California houses automated surface mount technology lines and complete product manufacturing.</h1>
+                        <br />
                         <h1 className="text-2xl">Founded in 1986, STRACON Inc. is dedicated to establish successful long-term electronic contract manufacturing partnership with its customers. We have the knowledge, dedication, resources and know-how to provide our customers the highest quality surface mount and through-hole circuit card assemblies, giving them a competitive edge in today’s marketplace.</h1>
                         <br />
                         <img src="https://straconinc.com/images/slider/slide2.jpg" />
