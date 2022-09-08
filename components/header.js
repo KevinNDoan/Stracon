@@ -57,7 +57,7 @@ class Navbar extends React.Component {
         return(
             <div className={`flex bg-white justify-between p-10 pb-6 items-end border-b-2`}>
                 <section className={`${styles.logo}`}>
-                    <h1 className="text-4xl font-semibold">Stracon</h1>
+                    <Link href="/"><h1 className="text-4xl font-semibold text-red-600">Stracon</h1></Link>
                 </section>
                 <section>
                     <div className={`${styles.menu} space-x-5`}>
