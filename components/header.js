@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Navbar.module.css'
 
-export default function Header() {
+export default function Header(props) {
     return(
         <>
         <Head>
