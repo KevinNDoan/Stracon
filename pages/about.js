@@ -17,7 +17,7 @@ export default function About() {
                         <br />
                         <img src="https://straconinc.com/images/slider/slide2.jpg" />
                         <br />
-                        <h1 className="text-2xl font-semibold">We're known for</h1>
+                        <h1 className="text-2xl font-semibold">We&apos;re known for</h1>
                         <h1 className="text-2xl">Surface mount assembly</h1>
                         <h1 className="text-2xl">Through-hole assembly</h1>
                         <h1 className="text-2xl">Flex PCB assembly</h1>
