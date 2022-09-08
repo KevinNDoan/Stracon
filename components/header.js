@@ -59,13 +59,13 @@ class Navbar extends React.Component {
                 <section className={styles.logo}></section>
                 <section>
                     <div className={`${styles.menu} space-x-4`}>
-                        <Link href="/"><h3 className="text-xl font-semibold clickable">Home</h3></Link>
-                        <Link href="/about"><h3 className="text-xl font-semibold clickable">About</h3></Link>
-                        <Link href="/equipment"><h3 className="text-xl font-semibold clickable">Equipment</h3></Link>
-                        <Link href="/industries"><h3 className="text-xl font-semibold clickable">Industries</h3></Link>
-                        <Link href="/technologies"><h3 className="text-xl font-semibold clickable">Technologies</h3></Link>
-                        <Link href="/valueadded"><h3 className="text-xl font-semibold clickable">Value Added</h3></Link>
-                        <Link href="/contact"><h3 className="text-xl font-semibold clickable">Contact Us</h3></Link>
+                        <Link href="/"><h3 className="text-lg font-semibold clickable">Home</h3></Link>
+                        <Link href="/about"><h3 className="text-lg font-semibold clickable">About</h3></Link>
+                        <Link href="/equipment"><h3 className="text-lg font-semibold clickable">Equipment</h3></Link>
+                        <Link href="/industries"><h3 className="text-lg font-semibold clickable">Industries</h3></Link>
+                        <Link href="/technologies"><h3 className="text-lg font-semibold clickable">Technologies</h3></Link>
+                        <Link href="/valueadded"><h3 className="text-lg font-semibold clickable">Value Added</h3></Link>
+                        <Link href="/contact"><h3 className="text-lg font-semibold clickable">Contact Us</h3></Link>
                     </div>
                     <div className={`${styles.smallMenu}`}>
                         <div className="clickable" onClick={this.toggleMenu}>
