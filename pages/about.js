@@ -21,6 +21,7 @@ export default function About() {
                  * Ultra fie pitch/BGA/X-ray
                  * Flexible high mix production
                  * Cable anhd wire harness assembly
+                 */
             </main>
 
             <Footer />
