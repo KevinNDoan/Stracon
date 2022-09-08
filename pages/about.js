@@ -7,7 +7,7 @@ export default function About() {
             <Header pageName={'About'} />
 
             <main>
-                <h1 className="text-6xl font-semibold p-10 pb-5">What we do at Stracon</h1>
+                <h1 className="text-6xl font-semibold p-10 pl-14 pb-5">What we do at Stracon</h1>
                 <img src="https://straconinc.com/images/slider/slide1.jpg" />
                 <div className="flex justify-center mt-10">
                     <div className="w-1/2">

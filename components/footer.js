@@ -5,7 +5,7 @@ export default function Footer() {
     let currentYear = date.getFullYear()
 
     return(
-        <footer className={`flex p-15 mt-15 justify-center items-center`}>
+        <footer className={`flex p-16 mt-16 justify-center items-center`}>
             <div></div>
             <hr />
             Copyright © 1986 - {currentYear} Stracon Inc.
