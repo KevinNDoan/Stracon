@@ -2,6 +2,9 @@ import Header from '../components/header.js'
 
 export default function Technologies() {
     return(
-        <Header pageName={'Technologies'} />
+        <>
+            <Header pageName={'Technologies'} />
+            <Footer />
+        </>
     )
 }

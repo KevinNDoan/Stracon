@@ -60,7 +60,7 @@ class Navbar extends React.Component {
                     <h1 className="text-4xl font-semibold">Stracon</h1>
                 </section>
                 <section>
-                    <div className={`${styles.menu} space-x-4`}>
+                    <div className={`${styles.menu} space-x-5`}>
                         <Link href="/"><h3 className="text-base clickable">Home</h3></Link>
                         <Link href="/about"><h3 className="text-base clickable">About</h3></Link>
                         <Link href="/equipment"><h3 className="text-base clickable">Equipment</h3></Link>
