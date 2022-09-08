@@ -3,13 +3,25 @@ import Link from 'next/link'
 import styles from '../styles/Navbar.module.css'
 
 export default function Header(props) {
+    useEffect(() => {
+        const script = document.createElement('script');
+      
+        script.src = "https://cdn.tailwindcss.com";
+        script.async = true;
+      
+        document.body.appendChild(script);
+      
+        return () => {
+          document.body.removeChild(script);
+        }
+      }, []);
+
     return(
         <>
         <Head>
             <title>Stracon {props.pageName}</title>
             <meta name="description" content="Full Service Contract Manufacturing" />
             <link rel="icon" href="/favicon.ico" />
-            <script src="https://cdn.tailwindcss.com"></script>
         </Head>
         <Navbar pageName={props.pageName} />
         </>
