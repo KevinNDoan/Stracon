@@ -53,14 +53,14 @@ class Navbar extends React.Component {
             <div className={`flex bg-white justify-between`}>
                 <section className={styles.logo}></section>
                 <section>
-                    <div className={`${styles.menu}`}>
-                        <Link href="/">Home</Link>
-                        <Link href="/about">About</Link>
-                        <Link href="/equipment">Equipment</Link>
-                        <Link href="/industries">Industries</Link>
-                        <Link href="/technologies">Technologies</Link>
-                        <Link href="/value-added">Value Added</Link>
-                        <Link href="/contact">Contact Us</Link>
+                    <div className={`${styles.menu} space-x-4`}>
+                        <Link href="/"><h3>Home</h3></Link>
+                        <Link href="/about"><h3>About</h3></Link>
+                        <Link href="/equipment"><h3>Equipment</h3></Link>
+                        <Link href="/industries"><h3>Industries</h3></Link>
+                        <Link href="/technologies"><h3>Technologies</h3></Link>
+                        <Link href="/value-added"><h3>Value Added</h3></Link>
+                        <Link href="/contact"><h3>Contact Us</h3></Link>
                     </div>
                     <div className={`${styles.smallMenu}`}>
                         <div className="clickable" onClick={this.toggleMenu}>
