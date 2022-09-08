@@ -13,7 +13,7 @@ export default function About() {
                     <h1 className="text-xl w-1/2">Surface mount assembly</h1>
                 </div>
 
-                /** Photo checklist
+                {/** Photo checklist
                  * Surface mount assembly
                  * Through-hole assembly
                  * Flex PCB assembly
@@ -21,7 +21,7 @@ export default function About() {
                  * Ultra fie pitch/BGA/X-ray
                  * Flexible high mix production
                  * Cable anhd wire harness assembly
-                 */
+                 */}
             </main>
 
             <Footer />
