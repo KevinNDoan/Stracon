@@ -17,6 +17,11 @@ export default function Header(props) {
           document.body.removeChild(script);
         }
       }, []);
+    
+    // Change title if depending on page
+    let pageName = props.pageName
+    if(props.pageName !== 'Home')
+      pageName = `Stracon | ${props.pageName}`
 
     return(
         <>
@@ -25,7 +30,7 @@ export default function Header(props) {
             <meta name="description" content="Full Service Contract Manufacturing" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Navbar pageName={props.pageName} />
+        <Navbar pageName={pageName} />
         </>
     )
 }
@@ -59,7 +64,7 @@ class Navbar extends React.Component {
                         <Link href="/equipment"><h3>Equipment</h3></Link>
                         <Link href="/industries"><h3>Industries</h3></Link>
                         <Link href="/technologies"><h3>Technologies</h3></Link>
-                        <Link href="/value-added"><h3>Value Added</h3></Link>
+                        <Link href="/valueadded"><h3>Value Added</h3></Link>
                         <Link href="/contact"><h3>Contact Us</h3></Link>
                     </div>
                     <div className={`${styles.smallMenu}`}>
