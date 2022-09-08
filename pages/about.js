@@ -9,7 +9,18 @@ export default function About() {
             <main>
                 <div className="flex justify-center mt-10">
                     <h1 className="text-xl w-1/2">Our dedicated 12,000 sq. ft. facility in Irvine, California houses automated surface mount technology lines and complete product manufacturing.</h1>
+                    <br />
+                    <h1 className="text-xl w-1/2">Surface mount assembly</h1>
                 </div>
+
+                /** Photo checklist
+                 * Surface mount assembly
+                 * Through-hole assembly
+                 * Flex PCB assembly
+                 * Rigid-flex PCB assembly
+                 * Ultra fie pitch/BGA/X-ray
+                 * Flexible high mix production
+                 * Cable anhd wire harness assembly
             </main>
 
             <Footer />
