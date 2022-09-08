@@ -19,9 +19,9 @@ export default function Header(props) {
       }, []);
     
     // Change title if depending on page
-    let pageName = props.pageName
+    let pageName
     if(props.pageName !== 'Home')
-      pageName = `Stracon | ${props.pageName}`
+      pageName = `${props.pageName} | Stracon`
 
     return(
         <>
@@ -30,7 +30,7 @@ export default function Header(props) {
             <meta name="description" content="Full Service Contract Manufacturing" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Navbar pageName={pageName} />
+        <Navbar />
         </>
     )
 }
@@ -61,13 +61,13 @@ class Navbar extends React.Component {
                 </section>
                 <section>
                     <div className={`${styles.menu} space-x-4`}>
-                        <Link href="/"><h3 className="text-base font-semibold clickable">Home</h3></Link>
-                        <Link href="/about"><h3 className="text-base font-semibold clickable">About</h3></Link>
-                        <Link href="/equipment"><h3 className="text-base font-semibold clickable">Equipment</h3></Link>
-                        <Link href="/industries"><h3 className="text-base font-semibold clickable">Industries</h3></Link>
-                        <Link href="/technologies"><h3 className="text-base font-semibold clickable">Technologies</h3></Link>
-                        <Link href="/valueadded"><h3 className="text-base font-semibold clickable">Value Added</h3></Link>
-                        <Link href="/contact"><h3 className="text-base font-semibold clickable">Contact Us</h3></Link>
+                        <Link href="/"><h3 className="text-base clickable">Home</h3></Link>
+                        <Link href="/about"><h3 className="text-base clickable">About</h3></Link>
+                        <Link href="/equipment"><h3 className="text-base clickable">Equipment</h3></Link>
+                        <Link href="/industries"><h3 className="text-base clickable">Industries</h3></Link>
+                        <Link href="/technologies"><h3 className="text-base clickable">Technologies</h3></Link>
+                        <Link href="/valueadded"><h3 className="text-base clickable">Value Added</h3></Link>
+                        <Link href="/contact"><h3 className="text-base clickable">Contact Us</h3></Link>
                     </div>
                     <div className={`${styles.smallMenu}`}>
                         <div className="clickable" onClick={this.toggleMenu}>
