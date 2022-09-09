@@ -13,7 +13,7 @@ export default function Home() {
         <main>
           <img className="thumbnail" src="https://straconinc.com/images/slider/slide3.jpg" alt="Main Image" />
           <section className={`${styles.top} py-20`}>
-            <h1 className="w-3/4 md:w-1/2 text-4xl md:text-6xl font-bold">The manufacturing partner you've been waiting for...</h1>
+            <h1 className="w-3/4 md:w-1/2 text-4xl md:text-6xl font-bold">The manufacturing partner you&apos;ve been waiting for...</h1>
             <br />
             <h3 className="w-3/4 md:w-1/2 text-2xl md: text-4xl font-semibold">Your mission is ours. We are dedicated to serving all of our commitments to you.</h3>
             <br />
@@ -22,7 +22,7 @@ export default function Home() {
                 <div className={`${styles.card} clickable`}>
                   <h2 className="text-3xl font-bold">About &rarr;</h2>
                   <br />
-                  <p>Discover how Stracon can give you an advantage in today's competitive market.</p>
+                  <p>Discover how Stracon can give you an advantage in today&apos;s competitive market.</p>
                 </div>
               </Link>
 
