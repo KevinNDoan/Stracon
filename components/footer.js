@@ -8,7 +8,7 @@ export default function Footer() {
 
     return (
         <footer className={`block md:flex p-12 mt-16 justify-center items-center bg-zinc-800 text-white md:space-x-12`}>
-            <section className={`${styles.logo}`}>
+            <section>
                 <Link href="/"><h1 className="text-3xl md:text-5xl font-bold text-red-600 clickable">Stracon</h1></Link>
             </section>
             <section>

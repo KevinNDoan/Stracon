@@ -24,7 +24,7 @@ export default function Header(props) {
                 <meta property="og:url" content="https://www.northropgrumman.com/" />
                 <meta property="og:site_name" content="Stracon" />
             </Head>
-            <Navbar />
+            <Navbar pageName={props.pageName} />
         </>
     )
 }
@@ -34,17 +34,31 @@ class Navbar extends React.Component {
         super(props)
 
         this.state = {
-            hiddenMenu: 'none'
+            hiddenMenu: 'none',
+            about: '',
+            equipment: '',
+            industries: '',
+            technologies: '',
+            contact: ''
         }
 
+        this.handlePageSelected = this.handlePageSelected.bind(this)
         this.toggleMenu = this.toggleMenu.bind(this)
     }
 
+    handlePageSelected() {
+        if (this.props.pageName !== 'Home') {
+            this.setState({
+
+            })
+        }
+    }
+
     toggleMenu() {
-        if (this.state.hiddenMenu === 'none')
+        if (this.state.hiddenMenu === 'none') {
             this.setState({ hiddenMenu: '' })
-        else
-            this.setState({ hiddenMenu: 'none' })
+            return
+        } this.setState({ hiddenMenu: 'none' })
     }
 
     render() {
