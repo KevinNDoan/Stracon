@@ -46,16 +46,18 @@ class Navbar extends React.Component {
     }
 
     handlePageSelected() {
+        const defaultStyle = 'text-zinc-600 hover:text-black'
+
         // Reset state
         this.setState({
-            about: 'text-zinc-600',
-            equipment: 'text-zinc-600',
-            industries: 'text-zinc-600',
-            technologies: 'text-zinc-600',
-            contact: 'text-zinc-600'
+            about: defaultStyle,
+            equipment: defaultStyle,
+            industries: defaultStyle,
+            technologies: defaultStyle,
+            contact: defaultStyle
         }, () => {
             // Set state
-            if (this.props.pageName !== 'Home') {
+            if (this.props.pageName !== 'Home' || this.props.pageName !== 'Error') {
                 let pageSelected = this.props.pageName.toLowerCase()
                 this.setState({
                     [pageSelected]: 'underline underline-offset-4'
