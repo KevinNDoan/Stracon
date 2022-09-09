@@ -73,7 +73,7 @@ class Navbar extends React.Component {
 
     render() {
         return (
-            <div className={`flex bg-white justify-between px-14 pt-6 pb-6 items-end border-b-2`}>
+            <div className={`flex bg-white justify-between px-8 md:px-14 pt-8 pb-5 items-end border-b-2`}>
                 <section className={`${styles.logo}`}>
                     <Link href="/"><h1 className="text-3xl md:text-5xl font-bold text-red-600 clickable">Stracon</h1></Link>
                 </section>

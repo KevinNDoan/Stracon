@@ -29,7 +29,7 @@ export default class Contact extends React.Component {
                             <input className={styles.field} type="text" placeholder="Name" />
                             <input className={styles.field} type="text" placeholder="Email" />
                             <input className={styles.field} type="text" placeholder="Subject" />
-                            <textarea className={styles.field} type="text" placeholder="Name"></textarea>
+                            <textarea className={styles.field} type="text" placeholder="Message"></textarea>
                             <br />
                             <div className="flex justify-end mt-10">
                                 <button className="bg-black text-white font-bold p-4">Send Email</button>

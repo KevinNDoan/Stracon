@@ -15,7 +15,7 @@ export default function Home() {
           <section className={`${styles.top} py-10 md:py-20`}>
             <h1 className="w-3/4 md:w-1/2 text-4xl md:text-6xl font-bold">The manufacturing partner you&apos;ve been waiting for...</h1>
             <br />
-            <h3 className="w-3/4 md:w-1/2 text-2xl md: text-4xl font-semibold">Your mission is ours. We are dedicated to serving all of our commitments to you.</h3>
+            <h3 className="w-3/4 md:w-1/2 text-2xl md:text-3xl font-base md:font-semibold">Your mission is ours. We are dedicated to serving all of our commitments to you.</h3>
             <br />
             <img className="thumbnail w-3/4 md:w-1/2" src="https://straconinc.com/images/slider/slide1.jpg" />
           </section>
