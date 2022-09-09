@@ -8,11 +8,11 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header pageName="Home" />
       <div className={styles.container}>
         <main>
           <img className="thumbnail" src="https://straconinc.com/images/slider/slide3.jpg" alt="Main Image" />
-          <section className={`${styles.top} py-20`}>
+          <section className={`${styles.top} py-10 md:py-20`}>
             <h1 className="w-3/4 md:w-1/2 text-4xl md:text-6xl font-bold">The manufacturing partner you&apos;ve been waiting for...</h1>
             <br />
             <h3 className="w-3/4 md:w-1/2 text-2xl md: text-4xl font-semibold">Your mission is ours. We are dedicated to serving all of our commitments to you.</h3>
@@ -31,7 +31,7 @@ export default function Home() {
             </div>
           </section>
           <br />
-          <section className="p-20">
+          <section className="p-5 md:p-20">
             <h1 className="w-3/4 md:w-1/2 text-4xl md:text-6xl font-bold">Get to know Stracon</h1>
             <br />
             <div className="grid grid-cols-1 md:grid-cols-3">

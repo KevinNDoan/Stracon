@@ -34,24 +34,34 @@ class Navbar extends React.Component {
         super(props)
 
         this.state = {
-            hiddenMenu: 'none',
-            about: '',
-            equipment: '',
-            industries: '',
-            technologies: '',
-            contact: ''
+            hiddenMenu: 'none'
         }
 
         this.handlePageSelected = this.handlePageSelected.bind(this)
         this.toggleMenu = this.toggleMenu.bind(this)
     }
 
-    handlePageSelected() {
-        if (this.props.pageName !== 'Home') {
-            this.setState({
+    componentDidMount() {
+        this.handlePageSelected()
+    }
 
-            })
-        }
+    handlePageSelected() {
+        // Reset state
+        this.setState({
+            about: 'text-zinc-600',
+            equipment: 'text-zinc-600',
+            industries: 'text-zinc-600',
+            technologies: 'text-zinc-600',
+            contact: 'text-zinc-600'
+        }, () => {
+            // Set state
+            if (this.props.pageName !== 'Home') {
+                let pageSelected = this.props.pageName.toLowerCase()
+                this.setState({
+                    [pageSelected]: 'underline underline-offset-4'
+                })
+            }
+        })
     }
 
     toggleMenu() {
@@ -69,24 +79,24 @@ class Navbar extends React.Component {
                 </section>
                 <section>
                     <div className={`${styles.menu} text-base font-semibold space-x-5`}>
-                        <Link href="/about"><h3 className="clickable">About</h3></Link>
-                        <Link href="/equipment"><h3 className="clickable">Equipment</h3></Link>
-                        <Link href="/industries"><h3 className="clickable">Industries</h3></Link>
-                        <Link href="/technologies"><h3 className="clickable">Technologies</h3></Link>
-                        <Link href="/contact"><h3 className="clickable">Contact Us</h3></Link>
+                        <Link href="/about"><h3 className={`${this.state.about} clickable`} onClick={this.handlePageSelected}>About</h3></Link>
+                        <Link href="/equipment"><h3 className={`${this.state.equipment} clickable`} onClick={this.handlePageSelected}>Equipment</h3></Link>
+                        <Link href="/industries"><h3 className={`${this.state.industries} clickable`} onClick={this.handlePageSelected}>Industries</h3></Link>
+                        <Link href="/technologies"><h3 className={`${this.state.technologies} clickable`} onClick={this.handlePageSelected}>Technologies</h3></Link>
+                        <Link href="/contact"><h3 className={`${this.state.contact} clickable`} onClick={this.handlePageSelected}>Contact Us</h3></Link>
                     </div>
                     <div className={`${styles.smallMenu}`}>
                         <div className="clickable" onClick={this.toggleMenu}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" viewBox="0 0 16 16">
                                 <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                             </svg>
                         </div>
-                        <div className={`${this.state.hiddenMenu}`}>
+                        <div className={`${this.state.hiddenMenu} bg-white vw-100`}>
 
                         </div>
                     </div>
-                </section>
-            </div>
+                </section >
+            </div >
         )
     }
 }
