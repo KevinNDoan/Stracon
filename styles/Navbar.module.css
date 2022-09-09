@@ -4,10 +4,6 @@
     top: 0;
 }
 
-.logo {
-
-}
-
 .menu {
     display: flex !important;
 }
@@ -25,4 +21,3 @@
         display: none !important;
     }
 }
-
