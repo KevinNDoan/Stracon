@@ -7,8 +7,10 @@ export default function Equipment() {
             <Header pageName={'Equipment'} />
 
             <main className="m-8 md:m-20">
-                <div className="flex justify-center md:mb-20">
-                    <h1 className="text-3xl md:text-5xl font-bold">The equipment you <span className="underline">need</span> to get what you <span className="underline">want</span>.</h1>
+                <div className="text-center mb-10 md:mb-20">
+                    <h1 className="text-4xl md:text-5xl font-bold">Our Equipment List</h1>
+                    <br />
+                    <h1 className="text-2xl md:text-2xl font-base">We have the equipment you need to get what you want.</h1>
                 </div>
                 <br />
                 <div className="grid grid-cols-1 md:grid-cols-2 md:space-x-4">

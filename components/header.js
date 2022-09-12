@@ -76,8 +76,8 @@ class Navbar extends React.Component {
         return (
             <>
                 <div className={`flex bg-white justify-between px-8 md:px-14 pt-8 pb-5 items-end border-b-2`}>
-                    <section className={`${styles.logo}`}>
-                        <Link href="/"><h1 className="logo text-3xl md:text-5xl font-bold">Stracon</h1></Link>
+                    <section className={`${styles.logo} clickable`}>
+                        <Link href="/"><h1 className="logo text-4xl md:text-5xl font-bold">Stracon</h1></Link>
                     </section>
                     <section>
                         <nav className={`${styles.menu} text-base font-semibold space-x-5`}>
@@ -95,7 +95,30 @@ class Navbar extends React.Component {
                         </div>
                     </section>
                 </div >
-                <SideNav toggler={this.toggleMenu} state={this.state} handlePageSelected={this.handlePageSelected} />
+                <SideNav visibility={this.state.sideNav} toggler={this.toggleMenu} handlePageSelected={this.handlePageSelected}>
+                    <div className={`${styles.sideNav} ${this.state.sideNav}`}>
+                        <nav className={`${styles.sideNavBody} p-10`}>
+                            <div className="flex justify-between">
+                                <h1 className="logo text-3xl md:text-5xl font-bold">Stracon</h1>
+                                <div onClick={this.toggleMenu} className="clickable">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" viewBox="0 0 16 16">
+                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <br />
+                            <hr />
+                            <br />
+                            <div className="text-4xl font-semibold">
+                                <Link href="/"><h3 className={`${this.state.home} clickable my-4`} onClick={this.handlePageSelected}>Home</h3></Link>
+                                <Link href="/about"><h3 className={`${this.state.about} clickable my-4`} onClick={this.handlePageSelected}>About</h3></Link>
+                                <Link href="/equipment"><h3 className={`${this.state.equipment} clickable my-4`} onClick={this.handlePageSelected}>Equipment</h3></Link>
+                                <Link href="/industries"><h3 className={`${this.state.industries} clickable my-4`} onClick={this.handlePageSelected}>Industries</h3></Link>
+                                <Link href="/contact"><h3 className={`${this.state.contact} clickable my-4`} onClick={this.handlePageSelected}>Contact Us</h3></Link>
+                            </div>
+                        </nav>
+                    </div>
+                </SideNav>
             </>
         )
     }
@@ -103,7 +126,7 @@ class Navbar extends React.Component {
 
 function SideNav(props) {
     useEffect(() => {
-        if (props.state.sideNav === '' && typeof window === 'object') {
+        if (props.visibility === '' && typeof window === 'object') {
             const documentWidth = document.documentElement.clientWidth;
             const windowWidth = window.innerWidth;
             const scrollBarWidth = windowWidth - documentWidth;
@@ -123,33 +146,8 @@ function SideNav(props) {
 
     if (typeof window === 'object') {
         return ReactDOM.createPortal(
-            <>
-                <div className={`${styles.sideNav} ${props.state.sideNav}`}>
-                    <nav className={`${styles.sideNavBody} p-10`}>
-                        <div className="flex justify-between">
-                            <h1 className="logo text-3xl md:text-5xl font-bold">Stracon</h1>
-                            <div onClick={props.toggler} className="clickable">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" viewBox="0 0 16 16">
-                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
-                                </svg>
-                            </div>
-                        </div>
-                        <br />
-                        <hr />
-                        <br />
-                        <div className="text-4xl font-semibold">
-                            <Link href="/"><h3 className={`${props.state.home} clickable my-4`} onClick={props.handlePageSelected}>Home</h3></Link>
-                            <Link href="/about"><h3 className={`${props.state.about} clickable my-4`} onClick={props.handlePageSelected}>About</h3></Link>
-                            <Link href="/equipment"><h3 className={`${props.state.equipment} clickable my-4`} onClick={props.handlePageSelected}>Equipment</h3></Link>
-                            <Link href="/industries"><h3 className={`${props.state.industries} clickable my-4`} onClick={props.handlePageSelected}>Industries</h3></Link>
-                            <Link href="/contact"><h3 className={`${props.state.contact} clickable my-4`} onClick={props.handlePageSelected}>Contact Us</h3></Link>
-                        </div>
-                    </nav>
-                </div>
-            </>,
+            props.children,
             document.getElementById('__portal')
         )
-    }
-
-    return <></>
+    } return <></>
 }
