@@ -14,12 +14,12 @@ export default function Footer() {
             <section>
                 <div className="grid grid-cols-1 md:grid-cols-3">
                     <div>
+                        <div className="mb-3"><b><Link href="/">Home</Link></b></div>
                         <div className="mb-3"><b><Link href="/about">About</Link></b></div>
                         <div className="mb-3"><b><Link href="/equipment">Equipment</Link></b></div>
-                        <div className="mb-3"><b><Link href="/industries">Industries</Link></b></div>
                     </div>
                     <div>
-                        <div className="mb-3"><b><Link href="/technologies">Technologies</Link></b></div>
+                        <div className="mb-3"><b><Link href="/industries">Industries</Link></b></div>
                         <div className="mb-3"><b><Link href="/contact">Contact Us</Link></b></div>
                     </div>
                 </div>

@@ -1,16 +1,9 @@
 .field {
     width: 100%;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
     border-radius: 5px;
     padding: 0.7em;
     margin-top: 10px !important;
     margin-bottom: 10px !important;
-}
-
-.field::placeholder {
-    color: black;
 }
 
 .submitButton {

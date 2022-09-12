@@ -9,7 +9,32 @@
 }
 
 .smallMenu {
-    display: none;
+    display: none !important;
+}
+
+.sideNavBody {
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    z-index: 10;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+}
+
+
+.sideNav {
+    position: fixed;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    z-index: 20;
+    background: rgba(42, 42, 42, 0.8);
+    height: 100vh;
+    width: 100vw;
 }
 
 @media only screen and (max-width: 800px) {

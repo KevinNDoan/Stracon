@@ -23,6 +23,12 @@ a {
   box-sizing: border-box;
 }
 
+#__portal {
+  width: 100vw;
+  position: absolute !important;
+  z-index: 9999;
+}
+
 .clickable {
   cursor: pointer;
 }
@@ -30,6 +36,15 @@ a {
 .thumbnail {
   aspect-ratio: 16/9;
   object-fit: cover;
+}
+
+.logo {
+  color: var(--stracon-red);
+  font-family: Helvetica;
+}
+
+.hidden {
+  display: none !important;
 }
 
 @media (prefers-color-scheme: dark) {
