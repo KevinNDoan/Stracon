@@ -5,6 +5,21 @@ import Header from '../components/header.js'
 import Footer from '../components/footer.js'
 
 export default class Contact extends React.Component {
+    constructor(props) {
+        super(props)
+
+        this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleInput = this.handleInput.bind(this)
+    }
+
+    handleSubmit() {
+
+    }
+
+    handleInput() {
+
+    }
+
     render() {
         return (
             <>

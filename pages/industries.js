@@ -8,16 +8,8 @@ export default function Industries() {
             <Header pageName={'Industries'} />
 
             <main className="m-8 md:m-20">
-                {/** List of industries
-                 * Consumer electronics
-                 * Automotive
-                 * Military, defense
-                 * Communications
-                 * Aerospace
-                 * Security Access Industry
-                 * Medical
-                 * Radio Frequency Wireless
-                 */}
+                <h1 className="text-3xl md:text-5xl font-bold">We serve the needs of these industries...</h1>
+                <br />
                 <section className="grid grid-cols-1 md:grid-cols-2 mb-12 text-3xl md:text-4xl font-bold">
                     <div className={`${styles.box} bg-zinc-100 m-3 md:m-8 p-3 md:p-8`}>
                         <div className="h-20 max-h-20"><h1>Consumer Electronics</h1></div>
