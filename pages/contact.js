@@ -56,7 +56,7 @@ export default class Contact extends React.Component {
                         <textarea id="message" onChange={this.handleInput} value={this.state.message} className={`${styles.field} border border-zinc-300`} type="text" placeholder="Message"></textarea>
                         <br />
                         <div className="flex justify-end mt-10">
-                            <button onClick={this.handleSubmit} className="bg-black text-white font-bold p-4">Send Email</button>
+                            <button onClick={this.handleSubmit} className="bg-black text-white font-bold rounded p-4">Send Email</button>
                         </div>
                     </section>
                 </main>
