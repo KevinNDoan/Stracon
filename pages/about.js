@@ -9,8 +9,8 @@ export default function About() {
             <main>
                 <h1 className="text-4xl md:text-6xl font-bold md:font-semibold p-10 pl-14 pb-5">What we do at Stracon</h1>
                 <img className="thumbnail" src="https://straconinc.com/images/slider/slide1.jpg" />
-                <div className="flex justify-center mt-10">
-                    <div className="w-3/4 lg:w-1/2 text-xl md:text-2xl">
+                <div className="flex justify-center my-10">
+                    <div className="w-3/4 lg:w-1/2 text-lg md:text-2xl">
                         <h1 className="my-8">Our commitment and goal to quality and excellence is reflected in our products and services to our customers. With Stracon Inc., our customers have a manufacturing partner they can depend on to meet the needs of a challenging market. We are dedicated to meeting all of our commitments to our customers.</h1>
                         <h1 className="my-8">Founded in 1986, Stracon Inc. is dedicated to establish successful long-term electronic contract manufacturing partnership with its customers. We have the knowledge, dedication, resources and know-how to provide our customers the highest quality surface mount and through-hole circuit card assemblies, giving them a competitive edge in today&apos;s marketplace.</h1>
                     </div>
@@ -18,7 +18,7 @@ export default function About() {
                 <br />
                 <section className="bg-black w-100 p-20">
                     <div className="flex justify-center">
-                        <div className="w-3/4">
+                        <div className="w-full md:w-3/4">
                             <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold">State of the Art Facility</h1>
                             <br />
                             <h1 className="text-white md:text-2xl">Our dedicated 12,000 sq. ft. facility in Irvine, California houses automated surface mount technology lines and complete product manufacturing.</h1>
@@ -52,7 +52,7 @@ export default function About() {
                             <br />
                             <hr />
                             <br />
-                            <div className="grid grid-cols-1 md:grid-cols-2 md:mx-10 md:space-x-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:mx-10 md:space-x-4">
                                 <div>
                                     <h4 className="text-md md:text-lg mb-4">Surface mount assembly</h4>
                                     <h4 className="text-md md:text-lg mb-4">Through-hole assembly</h4>
