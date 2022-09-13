@@ -1,4 +1,3 @@
-import styles from '../styles/Industries.module.css'
 import Header from '../components/header.js'
 import Footer from '../components/footer.js'
 
@@ -68,7 +67,7 @@ export default function Industries() {
 
 function IndustryCard(props) {
     return (
-        <div className={`${styles.box} flex items-center bg-zinc-100 m-3 md:m-5 p-3 md:p-5`}>
+        <div className={`flex items-center bg-zinc-100 m-3 md:m-5 p-3 md:p-5`}>
             <div className="flex justify-between items-center w-full">
                 <h1>{props.name}</h1>
                 <div className="flex justify-end">{props.children}</div>
